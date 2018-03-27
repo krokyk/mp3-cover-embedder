@@ -25,7 +25,7 @@ public class Main {
             rootDirNamePath = args[0];
         } else {
             throw new RuntimeException(
-                    "Supply which directory to run this (this will embed covers in all subdirs recursively)\n"
+                    "Supply which directory to run this in (this will embed covers in all subdirs recursively)\n"
                             + "Example: java -jar mp3-cover-embedder.jar \"d:\\downloads\\my_album\"");
         }
 

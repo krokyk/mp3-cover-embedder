@@ -11,7 +11,7 @@
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<maven-jar-plugin.version>3.0.2</maven-jar-plugin.version>
-		<kroky-commons-logging.version>1.0</kroky-commons-logging.version>
+		<log4j.version>2.11.0</log4j.version>
 		<commons-io.version>2.6</commons-io.version>
 		<mp3agic.version>0.9.2-SNAPSHOT</mp3agic.version>
 		<libs.dir>libs</libs.dir>
@@ -57,10 +57,20 @@
 
 	<dependencies>
 		<dependency>
-			<groupId>org.kroky</groupId>
-			<artifactId>kroky-commons-logging</artifactId>
-			<version>${kroky-commons-logging.version}</version>
-		</dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-slf4j-impl</artifactId>
+            <version>${log4j.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>${log4j.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-api</artifactId>
+            <version>${log4j.version}</version>
+        </dependency>
 		<dependency>
 			<groupId>com.mpatric</groupId>
 			<artifactId>mp3agic</artifactId>
